@@ -6,3 +6,16 @@ README.md
 .env.example
 .DS_Store
 *.log
+server*.js
+package*.json
+data.json
+*.bat
+setup-*
+admin*.js
+admin*.css
+admin.html
+login.html
+register.html
+dashboard*.html
+agent.html
+track.html

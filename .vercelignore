@@ -6,8 +6,3 @@ README.md
 .env.example
 .DS_Store
 *.log
-server*.js
-package*.json
-data.json
-*.bat
-setup-*

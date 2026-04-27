@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node server-simple.js",
     "dev": "nodemon server-simple.js",
+    "build": "echo 'Build complete'",
+    "vercel-build": "echo 'Vercel build complete'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["apple", "support", "complaint", "portal", "express", "mongodb"],

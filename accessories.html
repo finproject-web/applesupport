@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Apple</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .accessories-hero {
+            background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .accessories-hero h1 {
+            font-size: 72px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+        
+        .accessories-hero p {
+            font-size: 24px;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .nav-links a.active {
+            color: #9b59b6 !important;
+        }
+        
+        .accessories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .accessory-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .accessory-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .accessory-image {
+            height: 200px;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #1d1d1f;
+        }
+        
+        .accessory-info {
+            padding: 30px;
+        }
+        
+        .accessory-info h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .accessory-info p {
+            color: #86868b;
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .price {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+        }
+        
+        .btn-primary {
+            background-color: #0071e3;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0077ed;
+        }
+        
+        .categories {
+            background-color: #f5f5f7;
+            padding: 80px 0;
+        }
+        
+        .categories h2 {
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .category-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+        
+        .category-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #9b59b6;
+        }
+        
+        .category-item h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor">
+                        <path d="M18.2 16.8c-.7.3-1.5.5-2.4.5-3.5 0-6.4-2.9-6.4-6.4 0-1.1.3-2.1.8-3-2.4.6-4.2 2.8-4.2 5.4 0 3.1 2.5 5.6 5.6 5.6 2.3 0 4.3-1.4 5.1-3.4.3.7.5 1.5.5 2.4 0 3.5-2.9 6.4-6.4 6.4-1.1 0-2.1-.3-3-.8.6 2.4 2.8 4.2 5.4 4.2 3.1 0 5.6-2.5 5.6-5.6 0-2.3-1.4-4.3-3.4-5.1z"/>
+                    </svg>
+                    <span>Apple</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="mac.html">Mac</a></li>
+                    <li><a href="ipad.html">iPad</a></li>
+                    <li><a href="iphone.html">iPhone</a></li>
+                    <li><a href="watch.html">Watch</a></li>
+                    <li><a href="vision.html">Vision</a></li>
+                    <li><a href="airpods.html">AirPods</a></li>
+                    <li><a href="tv.html">TV & Home</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="accessories.html" class="active">Accessories</a></li>
+                    <li><a href="index.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="search-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M15.7 14.3l-4.2-4.2c1.1-1.4 1.8-3.2 1.8-5.1 0-4.4-3.6-8-8-8S-3 4.6-3 9s3.6 8 8 8c1.9 0 3.7-.7 5.1-1.8l4.2 4.2c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4zM5 9c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z"/>
+                    </svg>
+                </a>
+                <a href="#" class="bag-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M14.5 4h-1.2V3c0-1.7-1.3-3-3-3S7 1.3 7 3v1H4.5c-.8 0-1.5.7-1.5 1.5v9c0 .8.7 1.5 1.5 1.5h10c.8 0 1.5-.7 1.5-1.5v-9c0-.8-.7-1.5-1.5-1.5zM8 3c0-1.1.9-2 2-2s2 .9 2 2v1H8V3zm6 11.5c0 .3-.2.5-.5.5h-10c-.3 0-.5-.2-.5-.5v-9c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5v9z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="accessories-hero">
+        <div class="container">
+            <h1>Accessories</h1>
+            <p>Everything you need to enhance your Apple experience.</p>
+        </div>
+    </section>
+
+    <!-- Featured Accessories -->
+    <section class="iphone-models">
+        <div class="container">
+            <h2>Popular Accessories</h2>
+            <div class="accessories-grid">
+                <div class="accessory-card">
+                    <div class="accessory-image">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="currentColor">
+                            <rect x="10" y="20" width="60" height="40" rx="5" fill="currentColor"/>
+                            <path d="M40 15 L30 5 L50 5 Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="accessory-info">
+                        <h3>Magic Keyboard</h3>
+                        <p>Wireless keyboard with built-in rechargeable battery. Compatible with Mac, iPad, and iPhone.</p>
+                        <div class="price">From $99</div>
+                        <a href="#" class="btn-primary">Buy</a>
+                    </div>
+                </div>
+
+                <div class="accessory-card">
+                    <div class="accessory-image">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="currentColor">
+                            <rect x="15" y="30" width="50" height="20" rx="10" fill="currentColor"/>
+                            <circle cx="25" cy="40" r="3" fill="white"/>
+                            <circle cx="55" cy="40" r="3" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="accessory-info">
+                        <h3>Magic Mouse</h3>
+                        <p>Multi-Touch surface for simple gestures. Rechargeable battery and seamless connection.</p>
+                        <div class="price">$79</div>
+                        <a href="#" class="btn-primary">Buy</a>
+                    </div>
+                </div>
+
+                <div class="accessory-card">
+                    <div class="accessory-image">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="currentColor">
+                            <rect x="20" y="25" width="40" height="30" rx="5" fill="currentColor"/>
+                            <circle cx="40" cy="40" r="8" fill="white"/>
+                            <circle cx="40" cy="40" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="accessory-info">
+                        <h3>Apple Pencil</h3>
+                        <p>Pixel-perfect precision for drawing and note-taking. Compatible with iPad Pro and iPad Air.</p>
+                        <div class="price">From $129</div>
+                        <a href="#" class="btn-primary">Buy</a>
+                    </div>
+                </div>
+
+                <div class="accessory-card">
+                    <div class="accessory-image">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="currentColor">
+                            <rect x="10" y="30" width="60" height="20" rx="10" fill="currentColor"/>
+                            <rect x="70" y="35" width="10" height="10" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="accessory-info">
+                        <h3>MagSafe Charger</h3>
+                        <p>Wireless charger for iPhone 12 and later. MagSafe technology for perfect alignment.</p>
+                        <div class="price">$39</div>
+                        <a href="#" class="btn-primary">Buy</a>
+                    </div>
+                </div>
+
+                <div class="accessory-card">
+                    <div class="accessory-image">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="currentColor">
+                            <rect x="15" y="25" width="50" height="30" rx="5" fill="currentColor"/>
+                            <rect x="20" y="30" width="40" height="20" rx="3" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="accessory-info">
+                        <h3>iPhone Cases</h3>
+                        <p>Protective cases for iPhone in various colors and materials. Official Apple cases.</p>
+                        <div class="price">From $39</div>
+                        <a href="#" class="btn-primary">Buy</a>
+                    </div>
+                </div>
+
+                <div class="accessory-card">
+                    <div class="accessory-image">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="currentColor">
+                            <rect x="20" y="20" width="40" height="40" rx="5" fill="currentColor"/>
+                            <rect x="25" y="25" width="30" height="30" rx="3" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="accessory-info">
+                        <h3>AirTag</h3>
+                        <p>Track and find your items with the Find My network. Precision Finding for iPhone.</p>
+                        <div class="price">$29</div>
+                        <a href="#" class="btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <div class="category-icon">Keyboard</div>
+                    <h4>Keyboards</h4>
+                    <p>Magic Keyboard, Smart Keyboard</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">Mouse</div>
+                    <h4>Mice & Trackpads</h4>
+                    <p>Magic Mouse, Magic Trackpad</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">Stylus</div>
+                    <h4>Apple Pencil</h4>
+                    <p>Apple Pencil 2, Apple Pencil 1</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">Charger</div>
+                    <h4>Chargers & Cables</h4>
+                    <p>MagSafe, USB-C, Lightning</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">Case</div>
+                    <h4>Cases & Protection</h4>
+                    <p>iPhone cases, iPad cases</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">Audio</div>
+                    <h4>Audio</h4>
+                    <p>EarPods, adapters</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">Bag</div>
+                    <h4>Bags & Sleeves</h4>
+                    <p>Laptop bags, device sleeves</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">Camera</div>
+                    <h4>Camera</h4>
+                    <p>Mounts, tripods, lenses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Product Support</h3>
+                    <ul>
+                        <li><a href="iphone.html">iPhone</a></li>
+                        <li><a href="mac.html">Mac</a></li>
+                        <li><a href="ipad.html">iPad</a></li>
+                        <li><a href="watch.html">Apple Watch</a></li>
+                        <li><a href="airpods.html">AirPods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Service and Repair</h3>
+                    <ul>
+                        <li><a href="#coverage">Check Coverage</a></li>
+                        <li><a href="#repair">Repair Options</a></li>
+                        <li><a href="#applecare">AppleCare+</a></li>
+                        <li><a href="#battery">Battery Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#app">Apple Support App</a></li>
+                        <li><a href="#status">System Status</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                        <li><a href="track.html">Track Complaint</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#youtube">Apple Support on YouTube</a></li>
+                        <li><a href="#today">Today at Apple</a></li>
+                        <li><a href="#communities">Apple Communities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
+                    <a href="#sales">Sales and Refunds</a>
+                    <a href="#legal">Legal</a>
+                    <a href="#sitemap">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Vision Pro - Apple</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .vision-hero {
+            background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .vision-hero h1 {
+            font-size: 72px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+        
+        .vision-hero p {
+            font-size: 24px;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .nav-links a.active {
+            color: #00d2ff !important;
+        }
+        
+        .vision-content {
+            padding: 80px 0;
+        }
+        
+        .vision-content h2 {
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .vision-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .vision-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .vision-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #00d2ff;
+        }
+        
+        .vision-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .vision-card p {
+            color: #86868b;
+            line-height: 1.6;
+        }
+        
+        .buy-section {
+            background-color: #f5f5f7;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .buy-section h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .buy-section p {
+            font-size: 20px;
+            color: #86868b;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .price {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 30px;
+        }
+        
+        .btn-primary {
+            background-color: #0071e3;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 24px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0077ed;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor">
+                        <path d="M18.2 16.8c-.7.3-1.5.5-2.4.5-3.5 0-6.4-2.9-6.4-6.4 0-1.1.3-2.1.8-3-2.4.6-4.2 2.8-4.2 5.4 0 3.1 2.5 5.6 5.6 5.6 2.3 0 4.3-1.4 5.1-3.4.3.7.5 1.5.5 2.4 0 3.5-2.9 6.4-6.4 6.4-1.1 0-2.1-.3-3-.8.6 2.4 2.8 4.2 5.4 4.2 3.1 0 5.6-2.5 5.6-5.6 0-2.3-1.4-4.3-3.4-5.1z"/>
+                    </svg>
+                    <span>Apple</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="mac.html">Mac</a></li>
+                    <li><a href="ipad.html">iPad</a></li>
+                    <li><a href="iphone.html">iPhone</a></li>
+                    <li><a href="watch.html">Watch</a></li>
+                    <li><a href="vision.html" class="active">Vision</a></li>
+                    <li><a href="airpods.html">AirPods</a></li>
+                    <li><a href="tv.html">TV & Home</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="index.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="search-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M15.7 14.3l-4.2-4.2c1.1-1.4 1.8-3.2 1.8-5.1 0-4.4-3.6-8-8-8S-3 4.6-3 9s3.6 8 8 8c1.9 0 3.7-.7 5.1-1.8l4.2 4.2c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4zM5 9c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z"/>
+                    </svg>
+                </a>
+                <a href="#" class="bag-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M14.5 4h-1.2V3c0-1.7-1.3-3-3-3S7 1.3 7 3v1H4.5c-.8 0-1.5.7-1.5 1.5v9c0 .8.7 1.5 1.5 1.5h10c.8 0 1.5-.7 1.5-1.5v-9c0-.8-.7-1.5-1.5-1.5zM8 3c0-1.1.9-2 2-2s2 .9 2 2v1H8V3zm6 11.5c0 .3-.2.5-.5.5h-10c-.3 0-.5-.2-.5-.5v-9c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5v9z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="vision-hero">
+        <div class="container">
+            <h1>Apple Vision Pro</h1>
+            <p>Welcome to the era of spatial computing.</p>
+        </div>
+    </section>
+
+    <!-- Vision Features -->
+    <section class="vision-content">
+        <div class="container">
+            <h2>The future is here</h2>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vision-icon">3D Interface</div>
+                    <h3>Spatial Computing</h3>
+                    <p>Apps and windows all around you. Interact with digital content in a whole new way using your eyes, hands, and voice.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">VR/AR</div>
+                    <h3>Augmented Reality</h3>
+                    <p>Digital content blends seamlessly with your physical space. Transform your room into an immersive entertainment experience.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">Eye Tracking</div>
+                    <h3>VisionOS</h3>
+                    <p>The world's first spatial operating system designed for vision, gesture, and voice interaction.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">Display</div>
+                    <h3>Ultra-High Resolution</h3>
+                    <p>More pixels than a 4K TV for each eye. Custom Apple silicon delivers incredible performance for spatial experiences.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">Camera</div>
+                    <h3>Spatial Capture</h3>
+                    <p>Capture and relive memories in immersive 3D. Share spatial photos and videos with friends and family.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">Apps</div>
+                    <h3>Millions of Apps</h3>
+                    <p>Access your favorite iOS and iPadOS apps in an entirely new way. Multi-task like never before.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Section -->
+    <section class="buy-section">
+        <div class="container">
+            <h2>Get Apple Vision Pro</h2>
+            <p>The most advanced personal electronics device ever created.</p>
+            <div class="price">$3,499</div>
+            <a href="#" class="btn-primary">Buy</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Product Support</h3>
+                    <ul>
+                        <li><a href="iphone.html">iPhone</a></li>
+                        <li><a href="mac.html">Mac</a></li>
+                        <li><a href="ipad.html">iPad</a></li>
+                        <li><a href="watch.html">Apple Watch</a></li>
+                        <li><a href="airpods.html">AirPods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Service and Repair</h3>
+                    <ul>
+                        <li><a href="#coverage">Check Coverage</a></li>
+                        <li><a href="#repair">Repair Options</a></li>
+                        <li><a href="#applecare">AppleCare+</a></li>
+                        <li><a href="#battery">Battery Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#app">Apple Support App</a></li>
+                        <li><a href="#status">System Status</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                        <li><a href="track.html">Track Complaint</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#youtube">Apple Support on YouTube</a></li>
+                        <li><a href="#today">Today at Apple</a></li>
+                        <li><a href="#communities">Apple Communities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
+                    <a href="#sales">Sales and Refunds</a>
+                    <a href="#legal">Legal</a>
+                    <a href="#sitemap">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

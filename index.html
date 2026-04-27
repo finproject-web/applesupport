@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Support - Get Help with Apple Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor">
+                        <path d="M18.2 16.8c-.7.3-1.5.5-2.4.5-3.5 0-6.4-2.9-6.4-6.4 0-1.1.3-2.1.8-3-2.4.6-4.2 2.8-4.2 5.4 0 3.1 2.5 5.6 5.6 5.6 2.3 0 4.3-1.4 5.1-3.4.3.7.5 1.5.5 2.4 0 3.5-2.9 6.4-6.4 6.4-1.1 0-2.1-.3-3-.8.6 2.4 2.8 4.2 5.4 4.2 3.1 0 5.6-2.5 5.6-5.6 0-2.3-1.4-4.3-3.4-5.1z"/>
+                    </svg>
+                    <span>Apple</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="mac.html">Mac</a></li>
+                    <li><a href="ipad.html">iPad</a></li>
+                    <li><a href="iphone.html">iPhone</a></li>
+                    <li><a href="watch.html">Watch</a></li>
+                    <li><a href="vision.html">Vision</a></li>
+                    <li><a href="airpods.html">AirPods</a></li>
+                    <li><a href="tv.html">TV & Home</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="index.html" class="active">Support</a></li>
+                    <li><a href="track.html">Track Complaint</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div id="authLinks">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+                <a href="#" class="search-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M15.7 14.3l-4.2-4.2c1.1-1.4 1.8-3.2 1.8-5.1 0-4.4-3.6-8-8-8S-3 4.6-3 9s3.6 8 8 8c1.9 0 3.7-.7 5.1-1.8l4.2 4.2c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4zM5 9c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z"/>
+                    </svg>
+                </a>
+                <a href="#" class="bag-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M14.5 4h-1.2V3c0-1.7-1.3-3-3-3S7 1.3 7 3v1H4.5c-.8 0-1.5.7-1.5 1.5v9c0 .8.7 1.5 1.5 1.5h10c.8 0 1.5-.7 1.5-1.5v-9c0-.8-.7-1.5-1.5-1.5zM8 3c0-1.1.9-2 2-2s2 .9 2 2v1H8V3zm6 11.5c0 .3-.2.5-.5.5h-10c-.3 0-.5-.2-.5-.5v-9c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5v9z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Apple Support</h1>
+            <p class="hero-subtitle">Get help with your Apple products</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" placeholder="Search for support topics..." class="search-input">
+                <button class="search-btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M17.5 16.5l-4.8-4.8c1.3-1.6 2.1-3.6 2.1-5.8 0-5-4-9-9-9s-9 4-9 9 4 9 9 9c2.2 0 4.2-.8 5.8-2.1l4.8 4.8c.4.4 1.1.4 1.5 0 .5-.4.5-1.1.2-1.5zM6 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-image">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor">
+                            <path d="M45 15v30H15V15h30m3-3H12v36h36V12z"/>
+                            <rect x="20" y="20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>iPhone 15 Pro</h3>
+                    <p>Titanium. So strong. So light. So Pro.</p>
+                    <a href="#" class="showcase-link">Get support</a>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-image">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor">
+                            <path d="M40 10v40H20V10h20m3-3H17v46h26V7z"/>
+                        </svg>
+                    </div>
+                    <h3>MacBook Pro</h3>
+                    <p>Mind-blowing. Head-turning.</p>
+                    <a href="#" class="showcase-link">Get support</a>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-image">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor">
+                            <rect x="10" y="5" width="40" height="50" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>iPad Pro</h3>
+                    <p>Unbelievably thin. Incredibly powerful.</p>
+                    <a href="#" class="showcase-link">Get support</a>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-image">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor">
+                            <circle cx="30" cy="30" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Apple Watch</h3>
+                    <p>Smarter. Brighter. Mightier.</p>
+                    <a href="#" class="showcase-link">Get support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Left Column - Main Support Content -->
+                <div class="main-column">
+                    <section class="support-cards">
+                        <h2>Get Support by Product</h2>
+                        <div class="cards-grid">
+                            <div class="support-card">
+                                <div class="card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M28 6v20H4V6h24m2-2H2v24h28V4z"/>
+                                    </svg>
+                                </div>
+                                <h3>iPhone</h3>
+                                <p>iPhone 15 Pro, iPhone 15, iPhone SE</p>
+                                <a href="#" class="card-link">iPhone Support</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M26 4v24H6V4h20m2-2H4v28h24V2z"/>
+                                    </svg>
+                                </div>
+                                <h3>Mac</h3>
+                                <p>MacBook Pro, MacBook Air, iMac, Mac Studio</p>
+                                <a href="#" class="card-link">Mac Support</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M24 2v28H8V2h16m2-2H6v32h20V0z"/>
+                                    </svg>
+                                </div>
+                                <h3>iPad</h3>
+                                <p>iPad Pro, iPad Air, iPad, iPad mini</p>
+                                <a href="#" class="card-link">iPad Support</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm0 24c-5.5 0-10-4.5-10-10S10.5 6 16 6s10 4.5 10 10-4.5 10-10 10z"/>
+                                    </svg>
+                                </div>
+                                <h3>Apple Watch</h3>
+                                <p>Apple Watch Series 9, Apple Watch Ultra 2</p>
+                                <a href="#" class="card-link">Watch Support</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M8 4v24h16V4H8m-2-2h20v28H6V2z"/>
+                                    </svg>
+                                </div>
+                                <h3>AirPods</h3>
+                                <p>AirPods Pro, AirPods, AirPods Max</p>
+                                <a href="#" class="card-link">AirPods Support</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M2 8v16h28V8H2m0-2h28v20H2V6z"/>
+                                    </svg>
+                                </div>
+                                <h3>Apple Vision Pro</h3>
+                                <p>Spatial computing, visionOS, apps</p>
+                                <a href="#" class="card-link">Vision Support</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M4 6v20h24V6H4m-2-2h28v24H2V4z"/>
+                                    </svg>
+                                </div>
+                                <h3>Apple TV</h3>
+                                <p>Apple TV 4K, Apple TV+, HomePod</p>
+                                <a href="#" class="card-link">TV & Home Support</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M16 2L4 8v16l12 6 12-6V8L16 2z"/>
+                                    </svg>
+                                </div>
+                                <h3>Accessories</h3>
+                                <p>Magic Keyboard, Apple Pencil, MagSafe</p>
+                                <a href="#" class="card-link">Accessories Support</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="applecare-section">
+                        <h2>Handled with AppleCare</h2>
+                        <p>Every AppleCare plan provides one-stop service for your Apple products, with quick and easy repairs for accidents like drops and spills. You're also covered if your iPhone, iPad, or Apple Watch is lost or stolen.</p>
+                        <a href="#" class="cta-button">Learn more</a>
+                    </section>
+
+                    <section class="repair-section">
+                        <h2>Apple Repair and Service</h2>
+                        <p>We can help you find an Apple-certified repair, performed by trusted experts who use genuine Apple parts.</p>
+                        <a href="#" class="cta-button">Start a repair</a>
+                    </section>
+
+                    <section class="track-section">
+                        <h2>Track Your Complaint</h2>
+                        <p>Already submitted a complaint? Track its status and updates in real-time.</p>
+                        <a href="track.html" class="cta-button">Track Complaint</a>
+                    </section>
+
+                    <section class="popular-topics">
+                        <h2>Popular Topics</h2>
+                        <div class="topics-grid">
+                            <div class="topic-item">
+                                <h3>iOS 17 Updates</h3>
+                                <p>Get the latest features and security updates</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                            <div class="topic-item">
+                                <h3>Battery Health</h3>
+                                <p>Check battery status and optimize performance</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                            <div class="topic-item">
+                                <h3>iCloud Storage</h3>
+                                <p>Manage your storage and backup settings</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                            <div class="topic-item">
+                                <h3>Apple ID & Password</h3>
+                                <p>Reset password and manage account security</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                            <div class="topic-item">
+                                <h3>Find My</h3>
+                                <p>Locate your devices and protect your data</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                            <div class="topic-item">
+                                <h3>Apple Pay</h3>
+                                <p>Set up and troubleshoot Apple Pay issues</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column - Complaint Form -->
+                <div class="sidebar">
+                    <div class="complaint-form-container">
+                        <h2>File a Complaint</h2>
+                        <p>We're here to help resolve any issues you're experiencing with Apple products or services.</p>
+                        <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 12px; margin-bottom: 20px; font-size: 14px; color: #0369a1;">
+                            <strong>📝 Note:</strong> When you submit your first complaint, we'll automatically create an account for you. You'll receive login credentials to track your complaint status and manage your support requests.
+                        </div>
+                        
+                        <form id="complaintForm" class="complaint-form">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number *</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" required maxlength="10" pattern="\d{10}" placeholder="Enter 10 digits only">
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="appleId">Apple ID</label>
+                                <input type="email" id="appleId" name="appleId" placeholder="name@example.com">
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="complaintType">Complaint Type *</label>
+                                <select id="complaintType" name="complaintType" required>
+                                    <option value="">Select a type</option>
+                                    <option value="fraud">Fraud Complaint</option>
+                                    <option value="purchase">Product Purchase Complaint</option>
+                                    <option value="product">Product Related Complaint</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="complaintDescription">Complaint Description *</label>
+                                <textarea id="complaintDescription" name="complaintDescription" rows="4" required></textarea>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="recaptcha-container">
+                                    <div class="recaptcha-placeholder">
+                                        <input type="checkbox" id="recaptcha" name="recaptcha" required>
+                                        <label for="recaptcha">I'm not a robot</label>
+                                    </div>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="submit-btn" disabled>
+                                <span class="btn-text">Submit Complaint</span>
+                                <span class="loading-spinner" style="display: none;">
+                                    <svg width="16" height="16" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="31.4" stroke-dashoffset="31.4" transform="rotate(-90 8 8)">
+                                            <animate attributeName="stroke-dashoffset" from="31.4" to="0" dur="1s" repeatCount="indefinite"/>
+                                        </circle>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="success-message" style="display: none;">
+                                Your complaint has been submitted successfully
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Service and Repair Sections -->
+    <section id="coverage" class="service-section">
+        <div class="container">
+            <h2>Check Coverage</h2>
+            <p>Find out what's covered by your Apple warranty and AppleCare+ coverage.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>AppleCare+ Coverage</h3>
+                    <p>Up to 2 incidents of accidental damage protection per year.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Hardware Warranty</h3>
+                    <p>One-year limited warranty and 90 days of complimentary support.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Software Support</h3>
+                    <p>Get help with macOS, iOS, and Apple apps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="repair" class="service-section">
+        <div class="container">
+            <h2>Repair Options</h2>
+            <p>Choose the best repair option for your Apple device.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Mail-in Repair</h3>
+                    <p>Send your device to an Apple Repair Center.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Carry-in Repair</h3>
+                    <p>Visit an Apple Store or Authorized Service Provider.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Onsite Service</h3>
+                    <p>We'll come to you for certain repairs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="applecare" class="service-section">
+        <div class="container">
+            <h2>AppleCare+</h2>
+            <p>Get expert service and support from Apple experts.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>AppleCare+ for iPhone</h3>
+                    <p>Screen repair, battery service, and more.</p>
+                </div>
+                <div class="service-item">
+                    <h3>AppleCare+ for Mac</h3>
+                    <p>Hardware coverage and software support.</p>
+                </div>
+                <div class="service-item">
+                    <h3>AppleCare+ for iPad</h3>
+                    <p>Accidental damage protection and priority service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="battery" class="service-section">
+        <div class="container">
+            <h2>Battery Service</h2>
+            <p>Get your battery replaced by an Apple Authorized Service Provider.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>iPhone Battery Service</h3>
+                    <p>Get your iPhone battery replaced.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Mac Battery Service</h3>
+                    <p>MacBook, MacBook Air, MacBook Pro battery replacement.</p>
+                </div>
+                <div class="service-item">
+                    <h3>iPad Battery Service</h3>
+                    <p>iPad and iPad Pro battery replacement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="service-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get help from Apple Support experts.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Phone Support</h3>
+                    <p>Call Apple Support: 1-800-MY-APPLE</p>
+                </div>
+                <div class="service-item">
+                    <h3>Online Chat</h3>
+                    <p>Chat with Apple Support representatives.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Email Support</h3>
+                    <p>Get help via email response.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="app" class="service-section">
+        <div class="container">
+            <h2>Apple Support App</h2>
+            <p>Get the Apple Support app for personalized assistance.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Download the App</h3>
+                    <p>Available on the App Store and Google Play.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Features</h3>
+                    <p>Track repairs, find articles, and more.</p>
+                </div>
+                <div class="service-item">
+                    <h3>24/7 Support</h3>
+                    <p>Get help anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="status" class="service-section">
+        <div class="container">
+            <h2>System Status</h2>
+            <p>Check the status of Apple services and systems.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Apple Services</h3>
+                    <p>iCloud, Apple Music, App Store status.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Store Systems</h3>
+                    <p>Apple Store online and retail status.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Developer Services</h3>
+                    <p>App Store Connect, developer tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessibility" class="service-section">
+        <div class="container">
+            <h2>Accessibility</h2>
+            <p>Learn about accessibility features in Apple products.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>VoiceOver</h3>
+                    <p>Screen reader built into Apple devices.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Zoom</h3>
+                    <p>Screen magnification for better visibility.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Siri</h3>
+                    <p>Voice control for hands-free use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="youtube" class="service-section">
+        <div class="container">
+            <h2>Apple Support on YouTube</h2>
+            <p>Watch helpful videos and tutorials from Apple Support.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>How-to Videos</h3>
+                    <p>Step-by-step guides for Apple products.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tips & Tricks</h3>
+                    <p>Get the most out of your Apple devices.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Product Demos</h3>
+                    <p>See new features in action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="today" class="service-section">
+        <div class="container">
+            <h2>Today at Apple</h2>
+            <p>Free sessions at Apple Store to learn new skills.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Photography</h3>
+                    <p>Learn iPhone photography techniques.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Art & Design</h3>
+                    <p>Explore creativity with Apple devices.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Coding</h3>
+                    <p>Learn programming with Swift.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="communities" class="service-section">
+        <div class="container">
+            <h2>Apple Communities</h2>
+            <p>Connect with other Apple users and experts.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Support Communities</h3>
+                    <p>Get help from other Apple users.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Developer Forums</h3>
+                    <p>Connect with app developers.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Discussions</h3>
+                    <p>Join conversations about Apple products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Product Support</h3>
+                    <ul>
+                        <li><a href="iphone.html">iPhone</a></li>
+                        <li><a href="mac.html">Mac</a></li>
+                        <li><a href="ipad.html">iPad</a></li>
+                        <li><a href="watch.html">Apple Watch</a></li>
+                        <li><a href="airpods.html">AirPods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Service and Repair</h3>
+                    <ul>
+                        <li><a href="#coverage">Check Coverage</a></li>
+                        <li><a href="#repair">Repair Options</a></li>
+                        <li><a href="#applecare">AppleCare+</a></li>
+                        <li><a href="#battery">Battery Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#app">Apple Support App</a></li>
+                        <li><a href="#status">System Status</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                        <li><a href="track.html">Track Complaint</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#youtube">Apple Support on YouTube</a></li>
+                        <li><a href="#today">Today at Apple</a></li>
+                        <li><a href="#communities">Apple Communities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Sales and Refunds</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

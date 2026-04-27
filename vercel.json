@@ -6,6 +6,14 @@
       "dest": "/index.html"
     },
     {
+      "src": "/styles.css",
+      "dest": "/styles.css"
+    },
+    {
+      "src": "/script.js",
+      "dest": "/script.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
